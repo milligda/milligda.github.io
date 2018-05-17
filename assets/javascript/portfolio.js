@@ -6,6 +6,6 @@ $(".portfolio-image").on("mouseenter mouseleave touchstart", function(e) {
     $(this).toggleClass("tile-hover");
 });
 
-$(".portfolio-image").on("touchleave", function(e) {
+$(".portfolio-image").on("touchend click", function(e) {
     $(this).toggleClass("tile-hover");
 });
