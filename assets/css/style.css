@@ -142,6 +142,10 @@ nav ul li a:hover {
     position: relative;
 }
 
+.thumbnail a {
+    text-decoration: none;
+}
+
 .center-thumbnail {
     margin-left: 5px;
     margin-right: 5px;
@@ -149,22 +153,29 @@ nav ul li a:hover {
 
 .portfolio-image {
     width: 300px;
+    height: 200px;
+    position: absolute;
 }
 
-.portfolio-title {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
+.portfolio-meta {
+    width: 300px;
+    height: 200px;
     text-align: center;
     color: #ffffff;
     font-size: 18px;
     background-color: #4aaaa5;
-    padding: 15px 0px;
-    text-decoration: none;
+    padding: 0px;
 }
 
-.portfolio-title:hover {
-    background-color: #5E7F7E;
+.portfolio-title {
+    padding-top: 80px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.tile-hover {
+    opacity: 0;
+    transition: all .6s ease-in-out;
 }
 
 .contact-form {
