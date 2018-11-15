@@ -1,60 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daniel Milligan Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Daniel Milligan</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
 
-<body>
+  <body>
+    <div class="home-container">
+      <div class="name-container"><h3>Daniel Milligan</h3></div>
 
-    <header>
-        <nav>
-            <h1 class="nav-name">Daniel Milligan</h1>
-            <ul>
-                <li class="nav-block nav-page"><a href="index.html">About</a></li>
-                <li class="nav-block nav-section-break">|</li>
-                <li class="nav-block nav-page"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav-block nav-section-break">|</li>
-                <li class="nav-block nav-page"><a href="contact.html" class="nav-last">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <div class="home-message">
+        <h1>A Fresh Perspective For Solving Development Problems</h1>
 
-    <div class="content-container">
-
-        <div class="main-content">
-
-            <div class="page-title">
-                <h1>About Me</h1>
-            </div>
-
-            <hr>
-
-            <div class="about-section">
-                <img id="about-image" src="assets/images/Dan-about-image.jpg" alt="Daniel Milligan Picture">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Morbi tempus iaculis urna id volutpat. Arcu vitae elementum curabitur vitae nunc sed velit. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Quisque egestas diam in arcu cursus euismod. Ipsum suspendisse ultrices gravida dictum fusce. Enim nec dui nunc mattis. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Vestibulum lectus mauris ultrices eros in cursus turpis massa.
-                </p>
-                <p>
-                    Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Id nibh tortor id aliquet lectus. Nisi vitae suscipit tellus mauris a diam maecenas sed. Nulla facilisi morbi tempus iaculis. Eu nisl nunc mi ipsum faucibus vitae aliquet. Orci eu lobortis elementum nibh tellus. Dolor sit amet consectetur adipiscing. Aenean vel elit scelerisque mauris pellentesque. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Non diam phasellus vestibulum lorem. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.
-                </p>
-                <p>
-                    Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Volutpat commodo sed egestas egestas fringilla. Donec massa sapien faucibus et molestie ac. Tellus at urna condimentum mattis. In dictum non consectetur a erat nam at lectus urna. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Mauris nunc congue nisi vitae suscipit tellus mauris a. Aliquet nec ullamcorper sit amet risus nullam eget felis. In aliquam sem fringilla ut morbi. Amet nulla facilisi morbi tempus iaculis urna. Sagittis id consectetur purus ut faucibus. Mi quis hendrerit dolor magna eget. Bibendum at varius vel pharetra.
-                </p>
-            </div>
-        
-        </div>
-
+        <h2>
+          Start with a highly analytical nature, add the creative perspective of
+          an entreprenuer, and use problem solving skills honed in investment
+          banking.
+        </h2>
+      </div>
     </div>
 
-    <footer>
-        <p class="copyright">Copyright &copy;</p>
-    </footer>
+    <div id="portfolio" class="portfolio-container">
+      <div class="portfolio-components container">
+        <h2 class="portfolio-main-title">Portfolio & Skills Demonstration</h2>
+        <div class="row portfolio-item-container">
+          <div class="col-sm-3">
+            <a
+              href="https://springlocker-staging.herokuapp.com/"
+              target="_blank"
+            >
+              <img
+                class="portfolio-image"
+                src="assets/images/portfolio-items/springlocker.jpg"
+              />
+            </a>
+          </div>
 
-</body>
+          <div class="col-sm-9">
+            <h4 class="portfolio-title">SpringLocker Redesign & Rebuild</h4>
+            <p class="portfolio-tech">
+              MongoDB, Express, React.js, Node.js, Passport, MobX, Cloudinary
+            </p>
+            <ul class="portfolio-points">
+              <li>
+                A web application to help users manage and share their gear
+                lockers.
+              </li>
+              <li>Sole developer and designer for the rebuild.</li>
+              <li>
+                <a
+                  href="https://springlocker-staging.herokuapp.com/"
+                  target="_blank"
+                  >Development Build</a
+                >
+              </li>
+              <li>
+                <a href="https://springlocker.com/" target="_blank"
+                  >Legacy Version</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-item-container">
+          <div class="col-sm-3">
+            <a href="http://squirrel-video.herokuapp.com/" target="_blank">
+              <img
+                class="portfolio-image"
+                src="assets/images/portfolio-items/squirrel.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="col-sm-9">
+            <h4 class="portfolio-title">
+              <a href="http://squirrel-video.herokuapp.com/" target="_blank"
+                >Squirrel</a
+              >
+            </h4>
+            <p class="portfolio-tech">
+              MongoDB, Express, React.js, Node.js, Passport, Cheerio
+            </p>
+            <ul class="portfolio-points">
+              <li>
+                A Google Chrome extension and web application for saving videos
+                to watch later.
+              </li>
+              <li>
+                Enables users to save videos from YouTube, Vimeo, Ted, and
+                NYTimes.
+              </li>
+              <li>
+                <a
+                  href="https://chrome.google.com/webstore/detail/squirrel/ddfnjccdalikdhoaelepmoldpgookabe"
+                  target="_blank"
+                  >Chrome Extension</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-item-container">
+          <div class="col-sm-3">
+            <a href="https://team1-new-news.herokuapp.com/" target="_blank">
+              <img
+                class="portfolio-image"
+                src="assets/images/portfolio-items/news-worthy.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="col-sm-9">
+            <h4 class="portfolio-title">
+              <a href="https://team1-new-news.herokuapp.com/" target="_blank"
+                >News Worthy</a
+              >
+            </h4>
+            <p class="portfolio-tech">
+              MySQL, Express, Handlebars, Node.js, Passport, Hammer.js
+            </p>
+            <ul class="portfolio-points">
+              <li>
+                A web application for saving and sharing the news you deem
+                "news-worthy".
+              </li>
+              <li>Mobile focused design.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-item-container">
+          <div class="col-sm-3">
+            <img
+              class="portfolio-image"
+              src="assets/images/portfolio-items/user-auth.jpg"
+            />
+          </div>
+
+          <div class="col-sm-9">
+            <h4 class="portfolio-title">User Authentication Bootstraps</h4>
+            <p class="portfolio-tech">
+              MongoDB, MySQL, Express, React.js, Node.js, Passport
+            </p>
+            <ul class="portfolio-points">
+              <li>
+                Incorporated Passport's user authentication into standard
+                create-react-app bootstrap.
+              </li>
+              <li>
+                <a
+                  href="https://github.com/milligda/mern-mongo-passport-mvc-app"
+                  target="_blank"
+                  >MongoDB Version</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/milligda/mern-mysql-passport-mvc-app"
+                  target="_blank"
+                  >MySQL Version</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-item-container">
+          <div class="col-sm-3">
+            <a href="https://milligda.github.io/triviaGame/" target="_blank">
+              <img
+                class="portfolio-image"
+                src="assets/images/portfolio-items/abstract-trivia.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="col-sm-9">
+            <h4 class="portfolio-title">
+              <a href="https://milligda.github.io/triviaGame/" target="_blank"
+                >Abstract Color Trivia</a
+              >
+            </h4>
+            <p class="portfolio-tech">Javascript, jQuery</p>
+            <ul class="portfolio-points">
+              <li>
+                Nothing fancy - just a clean, simple design and user experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-item-container">
+          <div class="col-sm-3">
+            <a href="https://getoutdoors.herokuapp.com/" target="_blank">
+              <img
+                class="portfolio-image"
+                src="assets/images/portfolio-items/get-outdoors.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="col-sm-9">
+            <h4 class="portfolio-title">
+              <a href="https://getoutdoors.herokuapp.com/" target="_blank"
+                >Get Outdoors</a
+              >
+            </h4>
+            <p class="portfolio-tech">Handlebars, Node.js, Express</p>
+            <ul class="portfolio-points">
+              <li>
+                Take a break from development and find the right outdoor
+                activity for you.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-container">
+      <div class="spacer-container"></div>
+
+      <div id="contact-details-container">
+        <h2 class="contact-title">Let's talk...</h2>
+        <h3 class="contact-message">
+          I grew up in Florida. Studied finance, accounting and theology in
+          Boston. Spent a decade in investment banking in NYC and Connecticut.
+          Now I live and code in Raleigh, NC.
+        </h3>
+
+        <div class="icon-container">
+          <a href="https://www.linkedin.com/in/milligda/" target="_blank">
+            <img src="assets/images/linkedin-icon-black.png" />
+          </a>
+          <a href="mailto:milligda@gmail.com" target="_top">
+            <img src="assets/images/email-icon.svg" />
+          </a>
+          <a href="https://github.com/milligda" target="_blank">
+            <img src="assets/images/github-icon.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
+  </body>
 </html>

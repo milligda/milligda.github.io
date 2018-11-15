@@ -1,0 +1,184 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    color: #333333;
+    background-color: #f2f2f2; 
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #4696e4;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4696e4;
+}
+
+li {
+    margin: 2px 0px;
+}
+
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom right, #4696e4, #63a7e8);
+}
+
+.home-container h1, .home-container h2, .home-container h3 {
+    color: #ffffff;
+}
+
+.name-container {
+    margin-left: 5vw;
+}
+
+.name-container h3 {
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.home-container h1 {
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.home-message {
+    padding-top: 50vh;
+    margin-left: 5vw;
+    width: 80%;
+}
+
+.portfolio-container, .contact-container {
+    min-height: 250px;
+    width: 100%;
+    padding-bottom: 60px;   
+}
+
+.portfolio-container {
+    background-color: #f2f2f2;
+}
+
+.contact-container {
+    background-color: #e8e8e8;
+}
+
+.portfolio-components {
+    margin-top: 40px;
+}
+
+.portfolio-main-title {
+    text-align: left;
+    margin-top: 40px;
+    color: #4696e4;
+}
+
+.title-container {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.spacer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-title {
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+#contact-details-container {
+    margin: 20vh auto 100px auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+.icon-container {
+    margin-top: 30px;
+}
+
+.icon-container img {
+    width: 75px; 
+    margin: 10px 10px 5px 10px;
+}
+
+.portfolio-item-container {
+    background-color: #ebebeb;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -1px rgba(100, 100, 100, 0.2), 0px 6px 10px 0px rgba(100, 100, 100, 0.14);
+}
+
+.portfolio-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.portfolio-tech {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.portfolio-points {
+    font-size: .9rem;
+    margin-top: 10px;
+
+}
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+
+@keyframes come-in {
+    to { transform: translateY(0); }
+}
+
+@media only screen and (max-width: 550px) {
+    .home-message {
+        padding-top: 20vh;
+        margin-left: 5vw;
+        width: 80%;
+    }
+}
