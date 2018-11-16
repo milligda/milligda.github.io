@@ -57,9 +57,6 @@ win.scroll(function(event) {
 
 
 // variables for navigation
-var navIconDownSrc = "assets/images/down-arrow.svg";
-var navIconUpSrc = "assets/images/up-arrow.svg";
-var goingDown = true;
 var section = 1;
 var totalSections = 3;
 
@@ -69,9 +66,23 @@ var section2 = $("#section-2").offset().top;
 var section3 = $("#section-3").offset().top;
 
 // navigation button click
-$(".nav-icon").on("click", function(event) {
-  // increase the section counter
-  goingDown ? section++ : section--;
+$("#up").on("click", function(event) {
+  // if we are not at the top section, decrease the section counter
+  if (section !== 1) {
+    section--
+  }
+
+  // scroll down to the section
+  $("body, html").animate({
+    scrollTop: eval('section' + section)
+  });
+});
+
+$("#down").on("click", function(event) {
+  // if we are not at the bottom section, increase the section counter
+  if (section !== totalSections) {
+    section++
+  }
 
   // scroll down to the section
   $("body, html").animate({
@@ -86,14 +97,13 @@ $(document).ready(function() {
     
     if (scrollLocation < section2) {
       section = 1;
-      goingDown = true;
-      $(".nav-icon").attr("src", navIconDownSrc)
+      $("#up").addClass("disabled");
     } else if (scrollLocation > section3 - 200) {
       section = 3;
-      goingDown = false;
-      $(".nav-icon").attr("src", navIconUpSrc)
+      $("#down").addClass("disabled");
     } else {
       section = 2;
+      $(".nav-icon").removeClass("disabled");
     }
   });
 });

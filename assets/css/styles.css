@@ -55,16 +55,22 @@ li {
 }
 
 .nav-icon {
+    display: block;
     height: 40px;
     background-color: #ccc;
     border-radius: 100px;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14);
+    margin-bottom: 10px;
 }
 
 .nav-icon:hover {
     transform: scale(1.2);
     background-color: #99a0b3;
+}
+
+.disabled {
+    opacity: 0.2;
 }
 
 .home-container {
