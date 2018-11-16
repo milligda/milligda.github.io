@@ -73,6 +73,11 @@ li {
     opacity: 0.2;
 }
 
+.disabled:hover {
+    transform: none;
+    background-color:#ccc;
+}
+
 .home-container {
     width: 100%;
     min-height: 100vh;
