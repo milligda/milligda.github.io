@@ -54,3 +54,46 @@ win.scroll(function(event) {
     }
   });
 });
+
+
+// variables for navigation
+var navIconDownSrc = "assets/images/down-arrow.svg";
+var navIconUpSrc = "assets/images/up-arrow.svg";
+var goingDown = true;
+var section = 1;
+var totalSections = 3;
+
+// page section locations
+var section1 = $("#section-1").offset().top;
+var section2 = $("#section-2").offset().top;
+var section3 = $("#section-3").offset().top;
+
+// navigation button click
+$(".nav-icon").on("click", function(event) {
+  // increase the section counter
+  goingDown ? section++ : section--;
+
+  // scroll down to the section
+  $("body, html").animate({
+    scrollTop: eval('section' + section)
+  });
+});
+
+// track the user's location on the page and determine the section and direction
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var scrollLocation = $(document).scrollTop();
+    
+    if (scrollLocation < section2) {
+      section = 1;
+      goingDown = true;
+      $(".nav-icon").attr("src", navIconDownSrc)
+    } else if (scrollLocation > section3 - 200) {
+      section = 3;
+      goingDown = false;
+      $(".nav-icon").attr("src", navIconUpSrc)
+    } else {
+      section = 2;
+    }
+  });
+});

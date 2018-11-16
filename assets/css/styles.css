@@ -46,6 +46,27 @@ li {
     margin: 2px 0px;
 }
 
+.nav-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.nav-icon {
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14);
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+    background-color: #99a0b3;
+}
+
 .home-container {
     width: 100%;
     min-height: 100vh;
@@ -94,13 +115,9 @@ li {
     background-color: #e8e8e8;
 }
 
-.portfolio-components {
-    margin-top: 40px;
-}
-
 .portfolio-main-title {
     text-align: left;
-    margin-top: 40px;
+    padding-top: 40px;
     color: #4696e4;
 }
 
