@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="dm-icon.svg">
+   sodipodi:docname="dm-icon.svg"
+   inkscape:export-filename="C:\Users\milli\OneDrive\Coding Programs\UNC Bootcamp\github-repo\milligda.github.io\assets\images\dm-icon.png"
+   inkscape:export-xdpi="40.959999"
+   inkscape:export-ydpi="40.959999">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,7 +29,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.1206611"
-     inkscape:cx="131.5415"
+     inkscape:cx="125.61327"
      inkscape:cy="67.705438"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -45,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
