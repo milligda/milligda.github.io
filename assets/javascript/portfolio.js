@@ -63,7 +63,7 @@ var totalSections = 3;
 // page section locations
 var section1 = $("#section-1").offset().top;
 var section2 = $("#section-2").offset().top;
-var section3 = $("#section-3").offset().top;
+var section3 = $("#section-3").offset().top + 200;
 
 // navigation button click
 $("#up").on("click", function(event) {
@@ -94,7 +94,7 @@ $("#down").on("click", function(event) {
 $(document).ready(function() {
   $(window).scroll(function() {
     var scrollLocation = $(document).scrollTop();
-    
+   
     if (scrollLocation < section2) {
       section = 1;
       $("#up").addClass("disabled");
